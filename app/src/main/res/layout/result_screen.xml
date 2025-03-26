@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#333">
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/play_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Again"
+        android:backgroundTint="#666"
+        android:textColor="#fff"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/change_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Player"
+        android:backgroundTint="#666"
+        android:textColor="#fff" />
+
+</LinearLayout>

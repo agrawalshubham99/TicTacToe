@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Game Mode -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game Mode"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_single"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Single Player"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rb_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Two Player"
+                android:layout_marginStart="16dp" />
+        </RadioGroup>
+
+        <!-- SINGLE PLAYER LAYOUT -->
+        <LinearLayout
+            android:id="@+id/single_player_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Name"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et_single_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick your symbol"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_single_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_single_x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/rb_single_o"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="O"
+                    android:layout_marginStart="16dp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Who goes first?"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_single_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_first_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Me"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/rb_first_cpu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CPU"
+                    android:layout_marginStart="16dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- TWO PLAYER LAYOUT -->
+        <LinearLayout
+            android:id="@+id/two_player_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:visibility="gone">
+
+            <!-- Player1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player1 Name"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_p1_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Player1 Name" />
+
+            <!-- Player2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player2 Name"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/et_p2_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Player2 Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player1's Symbol"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_p1_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_p1_x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/rb_p1_o"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="O"
+                    android:layout_marginStart="16dp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Who goes first?"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_two_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_first_p1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Player1"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/rb_first_p2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Player2"
+                    android:layout_marginStart="16dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Start Game Button -->
+        <Button
+            android:id="@+id/btn_start_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Game"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
